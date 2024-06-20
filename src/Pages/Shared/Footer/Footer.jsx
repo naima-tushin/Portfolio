@@ -3,13 +3,13 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 const Footer = () => {
     return (
         <footer className="bg-gray-900 text-gray-200 py-10">
-            <div className="container w-[90%] mx-auto grid grid-cols-1 md:grid-cols-3 gap-60">
+            <div className="container w-[90%] mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-60">
                 {/* Contact Information */}
                 <div>
                     <h2 className="text-xl font-bold mb-4">Contact Me</h2>
                     <ul>
                         <li className="mb-2"><i className="fas fa-envelope mr-2"></i> naimatushin21@gmail.com</li>
-                        <li className="mb-2"><i className="fas fa-phone mr-2"></i> +8801828011277</li>
+                        <li className="mb-2"><i className="fas fa-phone mr-2"></i> +880 1828 011 277</li>
                         <li className="mb-2"><i className="fas fa-map-marker-alt mr-2"></i> House #15, Road #2, Hillview Housing Society, Chattagram, Bangladesh</li>
                     </ul>
                 </div>

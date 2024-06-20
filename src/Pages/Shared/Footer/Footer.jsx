@@ -2,7 +2,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-900 text-gray-200 py-10">
+        <footer className="bg-stone-500 text-gray-200 py-10">
             <div className="container w-[90%] mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-60">
                 {/* Contact Information */}
                 <div>
@@ -34,7 +34,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-500">
+            <div className="border-t border-white mt-8 pt-6 text-center text-black">
                 &copy; 2024 Naima Akther Tushin. All rights reserved.
             </div>
         </footer>

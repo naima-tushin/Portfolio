@@ -2,11 +2,11 @@ import { FaHome, FaUser, FaProjectDiagram, FaEnvelope, FaTasks, FaCode } from 'r
 
 const Navbar = () => {
     return (
-        <div className="navbar bg-base-100 shadow-lg p-4">
-            <div className="flex-1">
+        <div className="navbar bg-stone-500 p-4 fixed">
+            <div className="flex-1 text-white">
                 <a className="btn btn-ghost normal-case text-2xl font-bold">My Portfolio</a>
             </div>
-            <div className="flex-none hidden lg:flex">
+            <div className="flex-none hidden lg:flex text-white">
                 <ul className="menu menu-horizontal px-1">
                     <li>
                         <a className="flex items-center">

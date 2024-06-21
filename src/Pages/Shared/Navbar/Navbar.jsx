@@ -25,17 +25,17 @@ const Navbar = () => {
                     </li>
                     <li>
                         <a className="flex items-center">
+                            <FaCode className="mr-1" /> Skills
+                        </a>
+                    </li>
+                    <li>
+                        <a className="flex items-center">
                             <FaProjectDiagram className="mr-1" /> Projects
                         </a>
                     </li>
                     <li>
                         <a className="flex items-center">
                             <FaEnvelope className="mr-1" /> Contact
-                        </a>
-                    </li>
-                    <li>
-                        <a className="flex items-center">
-                            <FaCode className="mr-1" /> Skills
                         </a>
                     </li>
                 </ul>

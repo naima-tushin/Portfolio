@@ -44,7 +44,7 @@ const Projects = () => {
   return (
     <section className="bg-gradient-to-r from-gray-500 via-stone-700 to-black py-12">
       <div className="container mx-auto px-4">
-        <h2 className="text-5xl font-extrabold text-white text-center mb-12">Projects</h2>
+        <h2 className="text-5xl font-extrabold text-white uppercase text-center mb-12">Projects</h2>
         <div className="w-[85%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div

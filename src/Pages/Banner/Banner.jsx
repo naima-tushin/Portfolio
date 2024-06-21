@@ -17,7 +17,7 @@ const Banner = () => {
                             <a
                                 href={ResumePDF}
                                 download="Resume.pdf"
-                                className="bg-gradient-to-r from-black to-stone-500 text-white uppercase px-3 py-1 md:px-4 md:py-2 rounded-full text-center transition duration-300 text-sm md:text-base flex items-center space-x-2"
+                                className="bg-gradient-to-r from-black to-stone-500 text-white uppercase px-3 py-1 md:px-4 md:py-2 rounded-full text-center transition duration-300 text-sm md:text-base flex items-center space-x-2 mb-2 lg:mb-0"
                             >
                                 <FontAwesomeIcon icon={faDownload} className="text-white" />
                                 <span>Download Resume</span>

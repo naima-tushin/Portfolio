@@ -28,12 +28,12 @@ const softSkills = [
 
 const Skills = () => {
   return (
-    <section className="py-12 bg-gray-100">
+    <section className="lg:py-12 py-6 bg-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-5xl uppercase font-extrabold text-stone-500 text-center">Skills</h2>
+        <h2 className="lg:text-5xl text-4xl uppercase font-extrabold text-stone-500 text-center">Skills</h2>
 
         {/* Technical Skills Section */}
-        <div className="mt-8">
+        <div className="lg:mt-8 mt-4">
           <h3 className="mb-8 p-4 text-3xl font-semibold bg-gradient-to-r from-gray-500 via-stone-700 to-black text-white text-center">Technical Skills</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {technicalSkills.map((skill, index) => (

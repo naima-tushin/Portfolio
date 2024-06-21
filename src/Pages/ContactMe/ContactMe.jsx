@@ -34,9 +34,9 @@ const ContactMe = () => {
     };
 
     return (
-        <section className="bg-gray-100 py-20">
+        <section className="bg-gray-100 lg:py-20 py-10">
             <div className="max-w-3xl mx-auto px-4">
-                <h2 className="text-5xl font-extrabold text-stone-500 uppercase text-center mb-8">Contact Me</h2>
+                <h2 className="lg:text-5xl text-4xl font-extrabold text-stone-500 uppercase text-center mb-8">Contact Me</h2>
                 <form className="max-w-3xl mx-auto" onSubmit={handleSubmit}>
                     <div className="mb-6">
                         <label htmlFor="name" className="block text-lg font-medium text-stone-500">Name</label>

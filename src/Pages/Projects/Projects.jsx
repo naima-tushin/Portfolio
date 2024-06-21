@@ -44,14 +44,14 @@ const Projects = () => {
   return (
     <section className="bg-gradient-to-r from-gray-500 via-stone-700 to-black py-12">
       <div className="container mx-auto px-4">
-        <h2 className="text-5xl font-extrabold text-white uppercase text-center mb-12">Projects</h2>
-        <div className="w-[85%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <h2 className="lg:text-5xl text-4xl font-extrabold text-white uppercase text-center mb-12">Projects</h2>
+        <div className="lg:w-[85%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
               className="bg-white text-stone-500 rounded-lg shadow-lg transform hover:-translate-y-2 transition-all duration-300"
             >
-              <img src={project.image} alt={project.title} className="rounded-t-lg h-48 w-full object-cover" />
+              <img src={project.image} alt={project.title} className="rounded-t-lg h-48 w-full lg:object-cover" />
               <div className="p-6">
                 <h3 className="text-2xl font-semibold mb-4 text-stone-500">{project.title}</h3>
                 <ul className="text-stone-500 mb-4 list-disc list-inside">

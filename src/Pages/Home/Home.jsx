@@ -3,17 +3,31 @@ import Banner from "../Banner/Banner";
 import ContactMe from "../ContactMe/ContactMe";
 import Projects from "../Projects/Projects";
 import Services from "../Services/Services";
+import Navbar from "../Shared/Navbar/Navbar";
 import Skills from "../Skills/Skills";
 
 const Home = () => {
     return (
         <div>
-            <Banner></Banner>
-            <AboutMe></AboutMe>
-            <Services></Services>
-            <Skills></Skills>
-            <Projects></Projects>
-            <ContactMe></ContactMe>
+            <Navbar />
+            <section id="home">
+                <Banner />
+            </section>
+            <section id="about">
+                <AboutMe />
+            </section>
+            <section id="services">
+                <Services />
+            </section>
+            <section id="skills">
+                <Skills />
+            </section>
+            <section id="projects">
+                <Projects />
+            </section>
+            <section id="contact">
+                <ContactMe />
+            </section>
         </div>
     );
 };

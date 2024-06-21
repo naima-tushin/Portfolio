@@ -1,42 +1,43 @@
+import { Link } from 'react-scroll';
 import { FaHome, FaUser, FaProjectDiagram, FaEnvelope, FaTasks, FaCode } from 'react-icons/fa';
 
 const Navbar = () => {
     return (
-        <div className="navbar bg-stone-500 p-4 fixed z-10">
+        <div className="navbar bg-stone-500 p-4 fixed z-10 w-full">
             <div className="flex-1 text-white">
                 <a className="btn btn-ghost normal-case text-2xl font-bold">My Portfolio</a>
             </div>
             <div className="flex-none hidden lg:flex text-white">
                 <ul className="menu menu-horizontal px-1">
                     <li>
-                        <a className="flex items-center">
+                        <Link to="home" smooth={true} duration={500} className="flex items-center cursor-pointer">
                             <FaHome className="mr-1" /> Home
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a className="flex items-center">
+                        <Link to="about" smooth={true} duration={500} className="flex items-center cursor-pointer">
                             <FaUser className="mr-1" /> About
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a className="flex items-center">
+                        <Link to="services" smooth={true} duration={500} className="flex items-center cursor-pointer">
                             <FaTasks className="mr-1" /> Services
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a className="flex items-center">
+                        <Link to="skills" smooth={true} duration={500} className="flex items-center cursor-pointer">
                             <FaCode className="mr-1" /> Skills
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a className="flex items-center">
+                        <Link to="projects" smooth={true} duration={500} className="flex items-center cursor-pointer">
                             <FaProjectDiagram className="mr-1" /> Projects
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a className="flex items-center">
+                        <Link to="contact" smooth={true} duration={500} className="flex items-center cursor-pointer">
                             <FaEnvelope className="mr-1" /> Contact
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </div>
@@ -47,34 +48,34 @@ const Navbar = () => {
                     </label>
                     <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                         <li>
-                            <a className="flex items-center">
+                            <Link to="home" smooth={true} duration={500} className="flex items-center cursor-pointer">
                                 <FaHome className="mr-1" /> Home
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a className="flex items-center">
+                            <Link to="about" smooth={true} duration={500} className="flex items-center cursor-pointer">
                                 <FaUser className="mr-1" /> About
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a className="flex items-center">
-                                <FaProjectDiagram className="mr-1" /> Projects
-                            </a>
-                        </li>
-                        <li>
-                            <a className="flex items-center">
-                                <FaEnvelope className="mr-1" /> Contact
-                            </a>
-                        </li>
-                        <li>
-                            <a className="flex items-center">
-                                <FaCode className="mr-1" /> Skills
-                            </a>
-                        </li>
-                        <li>
-                            <a className="flex items-center">
+                            <Link to="services" smooth={true} duration={500} className="flex items-center cursor-pointer">
                                 <FaTasks className="mr-1" /> Services
-                            </a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="skills" smooth={true} duration={500} className="flex items-center cursor-pointer">
+                                <FaCode className="mr-1" /> Skills
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="projects" smooth={true} duration={500} className="flex items-center cursor-pointer">
+                                <FaProjectDiagram className="mr-1" /> Projects
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="contact" smooth={true} duration={500} className="flex items-center cursor-pointer">
+                                <FaEnvelope className="mr-1" /> Contact
+                            </Link>
                         </li>
                     </ul>
                 </div>

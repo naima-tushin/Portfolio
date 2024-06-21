@@ -2,7 +2,7 @@ import { FaHome, FaUser, FaProjectDiagram, FaEnvelope, FaTasks, FaCode } from 'r
 
 const Navbar = () => {
     return (
-        <div className="navbar bg-stone-500 p-4 fixed">
+        <div className="navbar bg-stone-500 p-4 fixed z-10">
             <div className="flex-1 text-white">
                 <a className="btn btn-ghost normal-case text-2xl font-bold">My Portfolio</a>
             </div>
@@ -20,6 +20,11 @@ const Navbar = () => {
                     </li>
                     <li>
                         <a className="flex items-center">
+                            <FaTasks className="mr-1" /> Services
+                        </a>
+                    </li>
+                    <li>
+                        <a className="flex items-center">
                             <FaProjectDiagram className="mr-1" /> Projects
                         </a>
                     </li>
@@ -31,11 +36,6 @@ const Navbar = () => {
                     <li>
                         <a className="flex items-center">
                             <FaCode className="mr-1" /> Skills
-                        </a>
-                    </li>
-                    <li>
-                        <a className="flex items-center">
-                            <FaTasks className="mr-1" /> Services
                         </a>
                     </li>
                 </ul>

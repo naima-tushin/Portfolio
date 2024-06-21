@@ -4,7 +4,7 @@ const Services = () => {
   return (
     <section className="bg-gradient-to-r from-gray-500 via-stone-700 to-black pb-10 pt-10">
       <div className="container mx-auto px-6">
-        <h2 className="text-5xl font-extrabold text-center text-white mb-10">Services</h2>
+        <h2 className="text-5xl font-extrabold text-center text-white mb-10 uppercase">Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:w-[75%] lg:mx-auto">
           {/* Frontend Development */}
           <div className="bg-white p-6 rounded-lg shadow-lg">

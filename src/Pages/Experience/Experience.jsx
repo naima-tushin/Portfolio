@@ -16,8 +16,8 @@ const Experience = () => {
   ];
 
   return (
-    <section className="py-12 px-4 w-[85%] mx-auto">
-      <h2 className="text-5xl font-extrabold mb-8 text-center text-stone-500">Experience</h2>
+    <section className="lg:py-12 py-6 px-4 lg:w-[85%] mx-auto">
+      <h2 className="lg:text-5xl text-4xl font-extrabold lg:mb-8 mb-6 text-center text-stone-500 uppercase">Experience</h2>
       <TransitionGroup className="flex flex-col items-center">
         {experiences.map((exp, index) => (
           <CSSTransition

@@ -35,6 +35,11 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li>
+                        <Link to="experience" smooth={true} duration={500} className="flex items-center cursor-pointer">
+                            <FaProjectDiagram className="mr-1" /> Experience
+                        </Link>
+                    </li>
+                    <li>
                         <Link to="contact" smooth={true} duration={500} className="flex items-center cursor-pointer">
                             <FaEnvelope className="mr-1" /> Contact
                         </Link>

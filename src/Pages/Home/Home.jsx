@@ -1,6 +1,7 @@
 import AboutMe from "../AboutMe/AboutMe";
 import Banner from "../Banner/Banner";
 import ContactMe from "../ContactMe/ContactMe";
+import Experience from "../Experience/Experience";
 import Projects from "../Projects/Projects";
 import Services from "../Services/Services";
 import Navbar from "../Shared/Navbar/Navbar";
@@ -26,6 +27,9 @@ const Home = () => {
                 <Projects />
             </section>
             <section id="contact">
+                <section id="experience">
+                    <Experience />
+                </section>
                 <ContactMe />
             </section>
         </div>

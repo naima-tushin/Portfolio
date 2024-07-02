@@ -31,7 +31,9 @@ const Footer = () => {
                     <div className="flex space-x-4">
                         <a href="https://github.com/naima-tushin" className="text-gray-400 hover:text-white"><i className="fab fa-github fa-2x"></i></a>
                         <a href="https://linkedin.com/in/naima-tushin" className="text-gray-400 hover:text-white"><i className="fab fa-linkedin fa-2x"></i></a>
+                        <a href="mailto:naimatushin21@gmail.com" className="text-gray-400 hover:text-white"><i className="fab fa-google fa-2x"></i></a>
                     </div>
+
                 </div>
             </div>
             <div className="border-t border-white mt-8 pt-6 text-center text-black">

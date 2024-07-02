@@ -4,6 +4,7 @@ import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import img from '../../assets/images/Project1.png';
 import img2 from '../../assets/images/Project2.png';
 import img3 from '../../assets/images/Project3.png';
+import { FaGithub } from 'react-icons/fa';
 
 const projects = [
   {
@@ -14,6 +15,8 @@ const projects = [
       "Use WYSIWYG text editors for detailed pet descriptions."
     ],
     link: "https://adopt-me-a12.web.app",
+    clientRepo: "https://github.com/naima-tushin/AdoptMeClientSide",
+    serverRepo: "https://github.com/naima-tushin/AdoptMeServerSide",
     image: img,
   },
   {
@@ -24,6 +27,8 @@ const projects = [
       "Dive into diverse craft subcategories for endless inspiration and discovery."
     ],
     link: "https://artsandcraft-16065.web.app",
+    clientRepo: "https://github.com/naima-tushin/ArtycraftynessClientSide",
+    serverRepo: "https://github.com/naima-tushin/ArtycraftynessServerSide",
     image: img2,
   },
   {
@@ -34,6 +39,8 @@ const projects = [
       "Made sure signing in and joining were smooth, including using Google or GitHub."
     ],
     link: "https://harvest-hub-client.web.app",
+    clientRepo: "https://github.com/naima-tushin/HarvestHubClientSide",
+    serverRepo: "https://github.com/naima-tushin/HarvestHubServerSide",
     image: img3,
   },
 ];
@@ -57,14 +64,32 @@ const Projects = () => {
                     <li key={i}>{item}</li>
                   ))}
                 </ul>
-                <a
-                  href={project.link}
-                  className="inline-flex items-center bg-gradient-to-r from-gray-500 via-stone-700 to-black text-white py-2 px-4 rounded transition duration-300 uppercase"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View Project <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" />
-                </a>
+                <div className="flex flex-col space-y-2">
+                  <a
+                    href={project.link}
+                    className="inline-flex items-center bg-gradient-to-r from-gray-500 via-stone-700 to-black text-white py-2 px-4 rounded transition duration-300 uppercase"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Project <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-2" />
+                  </a>
+                  <a
+                    href={project.clientRepo}
+                    className="inline-flex items-center bg-gradient-to-r from-gray-500 via-stone-700 to-black text-white py-2 px-4 rounded transition duration-300 uppercase"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Client Repo <FaGithub className="ml-2" />
+                  </a>
+                  <a
+                    href={project.serverRepo}
+                    className="inline-flex items-center bg-gradient-to-r from-gray-500 via-stone-700 to-black text-white py-2 px-4 rounded transition duration-300 uppercase"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Server Repo <FaGithub className="ml-2" />
+                  </a>
+                </div>
               </div>
             </div>
           ))}

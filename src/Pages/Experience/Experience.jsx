@@ -1,5 +1,7 @@
 import React from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Experience = () => {
   const experiences = [
@@ -39,6 +41,12 @@ const Experience = () => {
           </CSSTransition>
         ))}
       </TransitionGroup>
+      {/* GitHub Repo Link */}
+      <p className="text-center text-gray-500 mt-4">
+        Check out the code on <a href="https://github.com/naima-tushin/StrongBong" target="_blank" rel="noopener noreferrer" className="underline flex items-center justify-center">
+          <FontAwesomeIcon icon={faGithub} className="mr-2" /> GitHub
+        </a>.
+      </p>
     </section>
   );
 };

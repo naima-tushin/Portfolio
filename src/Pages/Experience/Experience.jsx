@@ -16,7 +16,7 @@ const Experience = () => {
   ];
 
   return (
-    <section className="lg:py-12 py-6 px-4 lg:w-[85%] mx-auto">
+    <section className="lg:py-12 py-6 px-4 lg:w-[85%] mx-auto" id="experience">
       <h2 className="lg:text-5xl text-4xl font-extrabold lg:mb-8 mb-6 text-center text-stone-500 uppercase">Experience</h2>
       <TransitionGroup className="flex flex-col items-center">
         {experiences.map((exp, index) => (
@@ -29,11 +29,12 @@ const Experience = () => {
               <h3 className="text-2xl font-semibold mb-2 text-white">{exp.role}</h3>
               <p className="text-white mb-1">{exp.company}</p>
               <p className="text-white mb-4 italic">{exp.duration}</p>
-              <ul className="list-disc list-inside">
+              <ul className="list-disc list-inside mb-4">
                 {exp.responsibilities.map((item, idx) => (
                   <li key={idx} className="mb-1 text-white">{item}</li>
                 ))}
               </ul>
+              <a href="https://naima-tushin.github.io/StrongBong" target="_blank" rel="noopener noreferrer" className="text-black bg-white hover:bg-black hover:text-white font-bold border border-black rounded p-2 uppercase items-center justify-center text-center flex">Visit Strong Bong</a>
             </div>
           </CSSTransition>
         ))}
